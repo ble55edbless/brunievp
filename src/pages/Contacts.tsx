@@ -3,20 +3,20 @@ import { motion } from "framer-motion";
 
 export function Contacts() {
   return (
-    <div className="container mx-auto px-4 max-w-5xl py-12">
-      <div className="text-center mb-16 space-y-4">
+    <div className="container mx-auto px-4 max-w-5xl py-8 md:py-12">
+      <div className="text-center mb-10 md:mb-16 space-y-3 md:space-y-4">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-6xl font-serif text-dark-choco tracking-tight"
+          className="text-4xl md:text-6xl font-serif text-dark-choco tracking-tight"
         >
           Ждём вас <span className="italic text-primary-500">в гости</span>
         </motion.h1>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-16 lg:gap-24 items-start">
         {/* Contact Info */}
-        <div className="space-y-12 order-2 md:order-1 glass p-8 rounded-[2rem] border-primary-200 shadow-xl shadow-primary-900/5">
+        <div className="space-y-8 md:space-y-12 order-2 md:order-1 glass p-6 md:p-8 rounded-[2rem] border-primary-200 shadow-xl shadow-primary-900/5">
           <div className="space-y-6">
             <h2 className="text-2xl font-serif text-dark-choco border-b border-primary-200 pb-4">
               Связь с нами

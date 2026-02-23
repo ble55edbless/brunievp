@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <div className="container mx-auto px-4 max-w-6xl py-12 space-y-32">
+    <div className="container mx-auto px-4 max-w-6xl py-8 md:py-12 space-y-16 md:space-y-32">
       {/* Header */}
-      <section className="text-center max-w-3xl mx-auto space-y-6">
+      <section className="text-center max-w-3xl mx-auto space-y-4 md:space-y-6">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-serif text-dark-choco tracking-tight"
+          className="text-4xl md:text-7xl font-serif text-dark-choco tracking-tight"
         >
           История <br/><span className="italic text-primary-500 font-light">со вкусом</span>
         </motion.h1>
@@ -16,17 +16,17 @@ export function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-lg text-primary-900/70 font-light leading-relaxed"
+          className="text-base md:text-lg text-primary-900/70 font-light leading-relaxed"
         >
           Мы открыли свои двери в Евпатории, чтобы создать место, где время замедляется, а вкус выходит на первый план.
         </motion.p>
       </section>
 
       {/* Philosophy */}
-      <section className="grid md:grid-cols-2 gap-16 items-center">
-        <div className="space-y-8 order-2 md:order-1">
-          <h2 className="text-4xl font-serif text-dark-choco">Наша миссия</h2>
-          <p className="text-lg text-primary-800/80 font-light leading-relaxed">
+      <section className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div className="space-y-6 md:space-y-8 order-2 md:order-1">
+          <h2 className="text-3xl md:text-4xl font-serif text-dark-choco">Наша миссия</h2>
+          <p className="text-base md:text-lg text-primary-800/80 font-light leading-relaxed">
             Bruni — это не просто кофейня. Это лаборатория вкуса, где каждый ингредиент отбирается с любовью. Мы сотрудничаем с лучшими обжарщиками, чтобы каждая чашка кофе раскрывалась уникальным букетом.
           </p>
           <p className="text-lg text-primary-800/80 font-light leading-relaxed">

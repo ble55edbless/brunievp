@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
@@ -26,7 +26,7 @@ function ErrorFallback({ error, resetErrorBoundary }: { error: any; resetErrorBo
 export function App() {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -36,7 +36,7 @@ export function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </ErrorBoundary>
   );
 }
