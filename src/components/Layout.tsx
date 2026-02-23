@@ -9,7 +9,7 @@ export function Layout({ children }: { children: ReactNode }) {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (
@@ -18,11 +18,11 @@ export function Layout({ children }: { children: ReactNode }) {
       <AnimatePresence mode="wait">
         <motion.main
           key={location.pathname}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="flex-grow pt-24 pb-16"
+          initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          exit={{ opacity: 0, y: -20, filter: "blur(8px)" }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="flex-grow flex flex-col"
         >
           {children}
         </motion.main>

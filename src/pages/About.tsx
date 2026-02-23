@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <div className="container mx-auto px-4 max-w-6xl py-8 md:py-12 space-y-16 md:space-y-32">
+    <div className="container mx-auto px-4 max-w-6xl pt-28 md:pt-36 pb-16 space-y-16 md:space-y-32">
       {/* Header */}
       <section className="text-center max-w-3xl mx-auto space-y-4 md:space-y-6">
         <motion.h1

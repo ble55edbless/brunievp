@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function Contacts() {
   return (
-    <div className="container mx-auto px-4 max-w-5xl py-8 md:py-12">
+    <div className="container mx-auto px-4 max-w-5xl pt-28 md:pt-36 pb-16">
       <div className="text-center mb-10 md:mb-16 space-y-3 md:space-y-4">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

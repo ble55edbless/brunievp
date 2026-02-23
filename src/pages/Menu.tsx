@@ -62,7 +62,7 @@ export function Menu() {
   }, [items, activeCategory, searchQuery]);
 
   return (
-    <div className="container mx-auto px-4 max-w-6xl min-h-[60vh]">
+    <div className="container mx-auto px-4 max-w-6xl min-h-[60vh] pt-28 md:pt-36 pb-16">
       <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4">
         <h1 className="text-4xl md:text-6xl font-serif text-dark-choco tracking-tight">
           Наше меню
