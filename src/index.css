@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #fbf9f6;
+  --color-primary-100: #f3ece4;
+  --color-primary-200: #e7dac9;
+  --color-primary-300: #d7c1a8;
+  --color-primary-400: #c5a383;
+  --color-primary-500: #b88d66;
+  --color-primary-600: #aa7853;
+  --color-primary-700: #8e6045;
+  --color-primary-800: #744f3c;
+  --color-primary-900: #5e4133;
+
+  --color-dark-choco: #311c16;
+  --color-caramel: #c88141;
+  --color-milk: #fefdfb;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-milk text-dark-choco min-h-screen antialiased selection:bg-primary-300 selection:text-dark-choco overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/60 backdrop-blur-md border border-white/40 shadow-lg shadow-black/5;
+  }
+}
+
+/* Skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+.skeleton {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, #f3ece4 4%, #e7dac9 25%, #f3ece4 36%);
+  background-size: 1000px 100%;
+}
+
